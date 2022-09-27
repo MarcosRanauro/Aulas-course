@@ -8,3 +8,4 @@ function triangulo(angulo1, angulo2, angulo3){
     }
 }
 console.log(triangulo(60, 60, -90));
+  
