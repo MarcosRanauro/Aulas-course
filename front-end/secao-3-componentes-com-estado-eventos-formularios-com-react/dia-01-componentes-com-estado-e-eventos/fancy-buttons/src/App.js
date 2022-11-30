@@ -15,18 +15,39 @@ import React from 'react';
 
 
 class App extends React.Component {
+  //! Função com constructor   🔽   🔽 
+  constructor() {
+    super();
+    this.clickOne = this.clickOne.bind(this);
+    this.clickTwo = this.clickTwo.bind(this);
+    this.clickThree = this.clickThree.bind(this);
+  }
 
-  clickOne = () => {
+  clickOne () {
     console.log('Click 1');
   }
   
-  clickTwo = () => {
+  clickTwo () {
     console.log('Click 2');
   }
   
-  clickThree = () => {
+  clickThree () {
     console.log('Click 3');
   }
+  //! Função com constructor  🔼  🔼 
+
+  //! Usando a função com arrow functions sem o constructor declarado 🔽 🔽 
+  // clickOne = () => {
+  //   console.log('Click 1');
+  // }
+  
+  // clickTwo = () => {
+  //   console.log('Click 2');
+  // }
+  
+  // clickThree = () => {
+  //   console.log('Click 3');
+  // }
 
 
   render() {
